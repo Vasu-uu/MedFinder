@@ -1,0 +1,152 @@
+/* General Styles */
+body {
+  background-color: #f7fafc;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Section */
+header h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.125rem;
+  color: #4a5568;
+}
+
+/* Button Styling */
+button {
+  font-weight: 600;
+  border-radius: 8px;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-3px);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+button i {
+  margin-right: 8px;
+}
+
+/* Search Bar */
+#medicine-search {
+  font-size: 1.125rem;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+
+#medicine-search:focus {
+  border-color: #3182ce;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.3);
+}
+
+/* Loading Animation */
+#loading {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#loading .animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+/* Pharmacy Card Styling */
+.pharmacy-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pharmacy-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.pharmacy-card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 12px;
+}
+
+.pharmacy-card p {
+  font-size: 1rem;
+  color: #4a5568;
+}
+
+.medicines-list {
+  margin-top: 16px;
+}
+
+.medicine {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #edf2f7;
+}
+
+.medicine:last-child {
+  border-bottom: none;
+}
+
+.medicine p {
+  font-size: 1rem;
+  color: #4a5568;
+}
+
+.stock-status {
+  font-size: 0.875rem;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+/* Stock status colors */
+.in-stock {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.low-stock {
+  background-color: #fef9c3;
+  color: #d69e2e;
+}
+
+.out-of-stock {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .search-container {
+    flex-direction: column;
+  }
+
+  #search-btn, #location-btn {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  #results {
+    grid-template-columns: 1fr;
+  }
+
+  .pharmacy-card {
+    padding: 20px;
+  }
+}

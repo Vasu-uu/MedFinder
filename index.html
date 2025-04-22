@@ -4,21 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>MedFinder - Medicine Availability</title>
-  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2966/2966481.png" />
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
 </head>
-<body class="bg-gray-50 font-sans leading-normal">
 
+<body class="bg-gray-50 font-sans leading-normal">
   <div class="container mx-auto px-6 py-8">
-    <!-- Header with text instead of image -->
     <header class="text-center mb-16">
-      <h1 class="text-5xl font-bold text-blue-700 tracking-wide">MedFinder</h1>
+      <a href="index.html" class="text-5xl font-semibold text-blue-700 hover:text-blue-900 transition duration-200">
+        MedFinder
+      </a>
       <p class="text-gray-600 mt-3 text-lg">Your gateway to finding medicines nearby</p>
     </header>
 
-    <!-- Search Section -->
     <div class="bg-white rounded-xl shadow-xl p-8 mb-12">
       <div class="flex flex-col md:flex-row gap-6">
         <input 
@@ -26,28 +26,38 @@
           id="medicine-search" 
           placeholder="Search medicines (e.g., Dolo 650)" 
           class="flex-grow p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-lg shadow-md"
-        >
-        <button id="search-btn" class="bg-blue-600 hover:bg-blue-700 text-white py-3 px-8 rounded-lg font-semibold transition transform hover:scale-105 duration-300">
+        />
+        <button 
+          id="search-btn" 
+          class="bg-blue-600 hover:bg-blue-700 text-white py-3 px-8 rounded-lg font-semibold transition transform hover:scale-105 duration-300">
           <i class="fas fa-search mr-2"></i> Search
         </button>
-        <button id="location-btn" class="bg-green-600 hover:bg-green-700 text-white py-3 px-8 rounded-lg font-semibold transition transform hover:scale-105 duration-300">
+        <button 
+          id="location-btn" 
+          class="bg-green-600 hover:bg-green-700 text-white py-3 px-8 rounded-lg font-semibold transition transform hover:scale-105 duration-300">
           <i class="fas fa-location-arrow mr-2"></i> Locate Me
         </button>
       </div>
     </div>
 
-    <!-- User location display -->
     <div id="user-location" class="hidden bg-blue-50 text-blue-800 p-4 rounded-lg mb-8 text-sm"></div>
 
-    <!-- Loading Animation -->
     <div id="loading" class="hidden flex flex-col items-center justify-center py-12">
       <div class="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500 mb-4"></div>
       <p>Finding nearby pharmacies...</p>
     </div>
 
-    <!-- Search Results -->
     <div id="results" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
   </div>
+
+  <script>
+    document.getElementById("medicine-search").addEventListener("keydown", function (event) {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        document.getElementById("search-btn").click();
+      }
+    });
+  </script>
 
   <script src="script.js"></script>
 </body>

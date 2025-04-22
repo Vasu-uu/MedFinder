@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>MedFinder - Medicine Availability</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2966/2966481.png" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 </head>
 <body class="bg-gray-50 font-sans leading-normal">
 
   <div class="container mx-auto px-6 py-8">
+    <!-- Header with text instead of image -->
     <header class="text-center mb-16">
-      <h1 class="text-5xl font-semibold text-blue-700">MedFinder</h1>
+      <h1 class="text-5xl font-bold text-blue-700 tracking-wide">MedFinder</h1>
       <p class="text-gray-600 mt-3 text-lg">Your gateway to finding medicines nearby</p>
     </header>
 
+    <!-- Search Section -->
     <div class="bg-white rounded-xl shadow-xl p-8 mb-12">
       <div class="flex flex-col md:flex-row gap-6">
         <input 
@@ -33,13 +36,16 @@
       </div>
     </div>
 
+    <!-- User location display -->
     <div id="user-location" class="hidden bg-blue-50 text-blue-800 p-4 rounded-lg mb-8 text-sm"></div>
 
+    <!-- Loading Animation -->
     <div id="loading" class="hidden flex flex-col items-center justify-center py-12">
       <div class="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500 mb-4"></div>
       <p>Finding nearby pharmacies...</p>
     </div>
 
+    <!-- Search Results -->
     <div id="results" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
   </div>
 

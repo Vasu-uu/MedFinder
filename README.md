@@ -63,7 +63,7 @@ Highlight the most important features of your project:
 
 ## 📽️ Demo & Deliverables
 
-- **Demo Video**: _No video demo available_
+- **Demo Video**: (https://drive.google.com/file/d/11p7JAyGUybrzpJwIbGhmDsDgWK8Gmbby/view?usp=sharing)
 - **Pitch Deck / PPT Link**: _No pitch deck available_
 
 ---

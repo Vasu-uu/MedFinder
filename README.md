@@ -22,7 +22,7 @@ The **MedFinder** app aims to solve the problem of medicine availability and acc
 
 ### Team Members:  
 - **Vasudev V** (GitHub / LinkedIn / Role: Frontend Developer)  
-*(Add more team members if applicable)*
+
 
 ### Your Approach:  
 - **Why you chose this problem**: Access to medicines is a challenge in rural areas where pharmacies might not have the required stock. This project helps bridge that gap.

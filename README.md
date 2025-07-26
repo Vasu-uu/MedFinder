@@ -1,82 +1,63 @@
+<div align="center">
+  <img src="logo.png" alt="MedFinder Logo" width="150"/>
+  <h1>MedFinder - Medicine Availability</h1>
+  <p>
+    <strong>A responsive web application to find nearby pharmacies and check for available medicines in real-time.</strong>
+  </p>
+  <p>
+    <a href="https://vasu-uu.github.io/MedFinder/"><strong>View Live Demo</strong></a>
+  </p>
+</div>
+
 ![github-submission-banner](https://github.com/user-attachments/assets/a1493b84-e4e2-456e-a791-ce35ee2bcf2f)
 
-# 🚀 **MedFinder - Medicine Availability**
-
-> A platform to find nearby pharmacies and available medicines in real-time.
-
 ---
 
-## 📌 Problem Statement
+## 🎯 The Goal
 
-**Problem Statement 7 – Transform the Future of Rural Commerce**
+In many rural and underserved areas, finding a pharmacy with a specific medicine in stock can be a time-consuming and frustrating process. **MedFinder** was developed to solve this problem by providing a simple, real-time platform to check medicine availability in nearby pharmacies. By leveraging geolocation, the app saves users valuable time and effort, ensuring they can find the healthcare products they need, when they need them.
 
----
-
-## 🎯 Objective
-
-The **MedFinder** app aims to solve the problem of medicine availability and accessibility in rural and underserved areas. It serves individuals who need to find nearby pharmacies that carry specific medicines. The app uses geolocation to provide a real-time search of available medicines in nearby pharmacies, helping users save time and reduce the effort of physically searching for pharmacies.
-
----
-
-## 🧠 Team & Approach
-
-### Team Members:  
-- **Vasudev V** (GitHub / LinkedIn / Role: Frontend Developer)  
-
-
-### Your Approach:  
-- **Why you chose this problem**: Access to medicines is a challenge in rural areas where pharmacies might not have the required stock. This project helps bridge that gap.
-- **Key challenges you addressed**: Creating a real-time medicine search experience using a simulated database of pharmacies and medicines.
-- **Any pivots, brainstorms, or breakthroughs during hacking**: Simulating pharmacy data and integrating geolocation services to provide dynamic results.
-
----
-
-## 🛠️ Tech Stack
-
-### Core Technologies Used:
-- **Frontend**: HTML, CSS (Tailwind CSS), JavaScript
-- **Backend**: Simulated (No external backend used in current version)
-- **Database**: Simulated data (Randomly generated pharmacy and medicine details)
-- **APIs**: Geolocation API (for fetching user's location)
-- **Hosting**: GitHub Pages (or your preferred hosting solution)
-
-### Sponsor Technologies Used (if any):
-- [ ] **Groq**: _Not used_
-- [ ] **Monad**: _Not used_
-- [ ] **Fluvio**: _Not used_
-- [ ] **Base**: _Not used_
-- [ ] **Screenpipe**: _Not used_
-- [ ] **Stellar**: _Not used_
-
----
+This project was built to address the "Transform the Future of Rural Commerce" challenge.
 
 ## ✨ Key Features
 
-Highlight the most important features of your project:
+-   **Geolocation-Based Search**: Instantly finds pharmacies closest to your current location using the browser's Geolocation API.
+-   **Real-Time Medicine Search**: Filter pharmacies based on the availability of a specific medicine you're looking for.
+-   **Dynamic Pharmacy Information**: Displays a list of pharmacies with their name, address, and distance from the user.
+-   **Simulated Stock & Pricing**: Each pharmacy shows a list of available medicines with simulated stock levels (In Stock, Low Stock, Out of Stock) and prices.
+-   **Responsive & User-Friendly UI**: A clean, intuitive interface built with Tailwind CSS that works seamlessly on both desktop and mobile devices.
 
-- ✅ Search for medicines available in nearby pharmacies using geolocation
-- ✅ Display pharmacies with their names, addresses, and distance from the user
-- ✅ Real-time simulated medicine availability, showing stock levels and prices
-- ✅ User-friendly interface with search bar, "Locate Me" button, and live results display
+## 📸 Demo
 
----
+Here's a quick look at the MedFinder application in action:
 
-## 📽️ Demo & Deliverables
+*(Suggestion: Record a short GIF of your app working and place it here. You can use tools like Giphy Capture or ScreenToGif. For now, a screenshot works well too!)*
 
-- **Demo Video**: (https://drive.google.com/file/d/11p7JAyGUybrzpJwIbGhmDsDgWK8Gmbby/view?usp=sharing)
-- **Pitch Deck / PPT Link**: _No pitch deck available_
+![image](https://github.com/user-attachments/assets/a1493b84-e4e2-456e-a791-ce35ee2bcf2f)
 
----
+- **Full Demo Video**: [Watch on Google Drive](https://drive.google.com/file/d/11p7JAyGUybrzpJwIbGhmDsDgWK8Gmbby/view?usp=sharing)
 
-## ✅ Tasks & Bonus Checklist
+## 🛠️ Tech Stack & Tools
 
-✅**All members of the team completed the mandatory task - Followed at least 2 of our social channels and filled the form** (Details in Participant Manual)  
-✅ **All members of the team completed Bonus Task 1 - Sharing of Badges and filled the form (2 points)**  (Details in Participant Manual)
-✅ **All members of the team completed Bonus Task 2 - Signing up for Sprint.dev and filled the form (3 points)**  (Details in Participant Manual)
+The project is built entirely on front-end technologies, focusing on a lightweight and accessible user experience.
 
----
+| Category      | Technology / Tool                                                                                                  |
+| :------------ | :----------------------------------------------------------------------------------------------------------------- |
+| **Frontend** | `HTML5`, `CSS3`, `JavaScript (ES6)`                                                          |
+| **Styling** | `Tailwind CSS`, Custom CSS for animations and card styling                                         |
+| **APIs** | `Browser Geolocation API`                                                                                         |
+| **Data** | Simulated (dynamic data generated via JavaScript to mimic a real backend)                                         |
+| **Icons** | `Font Awesome`                                                                                                     |
+| **Hosting** | `GitHub Pages`                                                                                                   |
 
-## 🧪 How to Run the Project
+## 🧠 Development Insights
 
-### Requirements:
-- No special requirements as it's a front-end only project (no backend server needed)
+-   **Motivation**: The project was inspired by the real-world challenge of accessing essential medicines in non-urban areas, aiming to provide a digital solution that bridges this information gap.
+-   **Key Challenge**: The primary challenge was creating a realistic and performant real-time search experience without a backend. This was overcome by designing a robust client-side simulation for pharmacy and medicine data, which is generated dynamically based on the user's location.
+-   **Breakthrough**: Integrating the Geolocation API and then using trigonometry (`Math.cos`, `Math.sin`) to generate randomized pharmacy coordinates within a realistic radius of the user was a key breakthrough. This made the simulation feel dynamic and personalized.
+
+## 👤 Author
+
+-   **Vasudev V**
+    -   [GitHub](https://github.com/Vasu-uu)
+    -   [LinkedIn](https://www.linkedin.com/in/vasudev-/)

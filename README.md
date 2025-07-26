@@ -29,12 +29,6 @@ This project was built to address the "Transform the Future of Rural Commerce" c
 
 ## 📸 Demo
 
-Here's a quick look at the MedFinder application in action:
-
-*(Suggestion: Record a short GIF of your app working and place it here. You can use tools like Giphy Capture or ScreenToGif. For now, a screenshot works well too!)*
-
-![image](https://github.com/user-attachments/assets/a1493b84-e4e2-456e-a791-ce35ee2bcf2f)
-
 - **Full Demo Video**: [Watch on Google Drive](https://drive.google.com/file/d/11p7JAyGUybrzpJwIbGhmDsDgWK8Gmbby/view?usp=sharing)
 
 ## 🛠️ Tech Stack & Tools
@@ -43,12 +37,12 @@ The project is built entirely on front-end technologies, focusing on a lightweig
 
 | Category      | Technology / Tool                                                                                                  |
 | :------------ | :----------------------------------------------------------------------------------------------------------------- |
-| **Frontend** | `HTML5`, `CSS3`, `JavaScript (ES6)`                                                          |
-| **Styling** | `Tailwind CSS`, Custom CSS for animations and card styling                                         |
+| **Frontend** | `HTML5`, `CSS3`, `JavaScript (ES6)`                                                                            |
+| **Styling** | `Tailwind CSS`, Custom CSS for animations and card styling                                     |
 | **APIs** | `Browser Geolocation API`                                                                                         |
-| **Data** | Simulated (dynamic data generated via JavaScript to mimic a real backend)                                         |
-| **Icons** | `Font Awesome`                                                                                                     |
-| **Hosting** | `GitHub Pages`                                                                                                   |
+| **Data** | Simulated (dynamic data generated via JavaScript to mimic a real backend)                                        |
+| **Icons** | `Font Awesome`                                                                                                   |
+| **Hosting** | `GitHub Pages`                                                                                                 |
 
 ## 🧠 Development Insights
 
